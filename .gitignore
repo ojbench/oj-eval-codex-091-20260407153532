@@ -1,0 +1,19 @@
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+# Allow tracking the top-level Makefile used by OJ
+# (do not ignore generic Makefile at repo root)
+# If there are subdir Makefiles, keep them tracked too
+!Makefile
+code
+build/
+.vscode/
+.idea/
+*.o
+*.obj
+*.exe
+*.out
+*.log
+*.a
+*.so
+*.dSYM/
