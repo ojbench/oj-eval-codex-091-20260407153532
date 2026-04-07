@@ -326,7 +326,12 @@ int main(){
                 else cout<<"-1\n"; break;
             }
             case 6: {
-                if(valid){ auto it2=it; ++it2; if(it==it2) valid=false; else { ++it; cout<< *it <<"\n"; } }
+                if(valid){
+                    ++it; // advance first
+                    // if now at end, invalidate
+                    if(it == s[it_a].end()) valid = false;
+                    else cout << *it << "\n";
+                }
                 if(!valid) cout<<"-1\n"; break;
             }
         }
